@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: test
-          image: {$ACR}/{$image}:{$BUILD_NUMBER}
+          image: $ACR/{$image}:{$BUILD_NUMBER}
           ports:
             - containerPort: 80
 
