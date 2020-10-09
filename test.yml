@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: 
 kind: Deployment
 metadata:
   name: test
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: test
-          image: testbrain.azurecr.io/sample:1.0
+          image: testbrain.azurecr.io/sample
           ports:
             - containerPort: 80
 
