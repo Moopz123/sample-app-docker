@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: test
-          image: testbrain.azurecr.io/sample
+          image: myaks79248461.azurecr.io/sample
           ports:
             - containerPort: 80
 
