@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Daemonset
+metadata:
+  name: test-daemon
+  labels:
+    app: npm
+spec:
+  selector:
+    matchLabels:
+      app: npm
+  template:
+    metadata:
+      name: test-daemon
+      labels:
+        app: npm
+    spec:
+      containers:
+        - name: test-daemon
+          image: spinkube.azurecr.io/hello
+          ports:
+            - containerPort: 80
