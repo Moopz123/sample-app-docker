@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: test-daemon
-          image: spinkube.azurecr.io/hello
+          image: spinkube.azurecr.io/hellodemo
           ports:
             - containerPort: 80
